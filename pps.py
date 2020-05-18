@@ -66,7 +66,7 @@ if "--target" in sys.argv:
     else:
         output("PPS - Python Port Scanner")
         output("Scanning first 1024 ports")
-        for i in range(0, 1001):
+        for i in range(0, 1024):
             scan(target, i)
 else:
     usage()
